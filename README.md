@@ -51,9 +51,11 @@ Sharpe Ratio: SR=Ractivo−Rfσ (Usa Rf=0 si no tienes tasa libre de riesgo).
 
 # 🧠4.SINTESIS.
 **Selección de activos**
+
 A partir del dataset top_500_metadata.csv se seleccionaron cinco criptoactivos mediante un ranking multicriterio basado en capitalización de mercado, volumen de trading, volatilidad en 24 horas y distancia al máximo histórico (ATH). Esta metodología permitió identificar los activos más relevantes y líquidos del mercado en 2025.
 
-**Rentabilidad y riesgo en 2025**  
+**Rentabilidad y riesgo en 2025** 
+
 El análisis de la serie temporal (crypto_ohlc.csv) muestra que el activo BNB fue el más rentable en 2025, con una rentabilidad anual aproximada del [23.92%]. Sin embargo, su volatilidad diaria fue media del 5% en comparación con el resto de activos.
 
 El máximo drawdown indica que BTC presentó el perfil de riesgo MEDIO, con una caída máxima aproximada del [30,85%], mientras que ETH sufrió las mayores pérdidas en términos de caídas desde máximos con caidas del 59%.
