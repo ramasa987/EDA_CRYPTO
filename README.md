@@ -28,16 +28,17 @@ Métrica: Rentabilidad anual=Preciofin_2025−Precioinicio_2025Precioinicio_202
 H0: La volatilidad diaria promedio en 2025 no está relacionada con la rentabilidad anual. 
 H1: Existe una correlación significativa entre volatilidad y rentabilidad.
 Métrica: desviación estándar de los retornos diarios.
-🧪 Hipótesis 3 — Máximo drawdown
+
+**🧪 Hipótesis 3 — Máximo drawdown**
 H0: Los 5 criptoactivos tienen drawdowns similares durante 2025.
 H1: Al menos uno presenta un drawdown significativamente menor (mejor perfil de riesgo).
 
-🧪 Hipótesis 4 — Sharpe Ratio
+**🧪 Hipótesis 4 — Sharpe Ratio**
 H0: No hay diferencias significativas en el Sharpe Ratio entre los 5 activos. 
 H1: Uno de los activos tiene un Sharpe Ratio superior, indicando mejor relación riesgo–retorno.
 Sharpe Ratio: SR=Ractivo−Rfσ 
 (Usa Rf=0 si no tienes tasa libre de riesgo).
 
-🧪 Hipótesis 5 — Momentum
+# 🏁 5. Conclusión final
 H0: El momentum de 90 días no predice la rentabilidad futura en 2025. 
 H1: El momentum de 90 días está asociado con mayor rentabilidad posterior.
