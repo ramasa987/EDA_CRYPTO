@@ -9,7 +9,7 @@ plt.style.use("seaborn-v0_8")
 sns.set_palette("tab10")
 from datetime import datetime
 import dataframe_image as dfi
-
+#carga archivos
 import os
 os.getcwd()
 
@@ -342,17 +342,18 @@ def max_drawdown(series):
     drawdown = (cumulative - peak) / peak
     return drawdown.min()
 
-drawdowns = (
+drawdown = (
     ohlc_top5_R.groupby("symbol")["daily_return"]
     .apply(max_drawdown)
     .reset_index(name="max_drawdown")
 )
 
-drawdowns
+drawdown
 
 # ------------ 
-dfi.export(drawdowns,"max_drawdon.png",table_conversion='chrome')
+dfi.export(drawdown,"max_drawdon.png",table_conversion='chrome')
 # ------------ 
+
 
 # grafico de BARRAS
 # Estilo profesional
@@ -367,7 +368,7 @@ color_map = {
 }
 
 # Ordenar de mayor a menor drawdown (opcional pero profesional)
-df_plot = df_drawdown.sort_values("max_drawdown", ascending=True)
+df_plot = drawdown.sort_values("max_drawdown", ascending=True)
 
 # Crear lista de colores en el mismo orden que el DataFrame
 colors = [color_map[s] for s in df_plot["symbol"]]
@@ -392,6 +393,8 @@ plt.tight_layout()
 plt.savefig("Maximo_Dradown.png", dpi=300, bbox_inches="tight")
 plt.show()
 
+
+
 #6. Sharpe Ratio (riesgo–retorno)
 #excluyendo USDT por datos corruptos.
 sharpe = (
@@ -411,7 +414,7 @@ dfi.export(sharpe,"sharpe_ratio.png",table_conversion='chrome')
 summary = (
     returns_2025
     .merge(volatility, on="symbol")
-    .merge(drawdowns, on="symbol")
+    .merge(drawdown, on="symbol")
     .merge(sharpe, on="symbol")
 )
 
@@ -461,7 +464,7 @@ plt.show()
 summary = (
     returns_2025
     .merge(volatility, on="symbol")
-    .merge(drawdowns, on="symbol")
+    .merge(drawdown, on="symbol")
     .merge(sharpe, on="symbol")
 )
 
