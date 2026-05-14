@@ -9,7 +9,7 @@ Este proyecto presenta un análisis exploratorio de datos (EDA) de la rentabilid
 - Analisis y seleccion.
 - Estudio de Rentabilidad. 
 
-## 1.ANALISIS Y SELECCION 🔎.
+## 🔎 1.ANALISIS Y SELECCION .
 El objetivo del ranking es seleccionar los 5 criptoactivos más relevantes del mercado, no los más rentables, sino los más sólidos, líquidos y representativos.
 **Los pesos se asignan según la importancia real de cada métrica en el mercado cripto.**
 Los criterios definidos son:
@@ -18,14 +18,14 @@ Los criterios definidos son:
 - Volatility_24h → 20%
 - ATH_distance → 10%
 
-## 2.ESTUDIO DE RENTABILIDAD 💲.
+## 💲2.ESTUDIO DE RENTABILIDAD.
 **Para comprobar que criptoactivo de los 5 elegidos es mas retable en el periodo de 2025. Realizo un analisis de retabilidad de los criptoactivos seleccionados, estableciendo unas hipotesis. Las metricas utlizadas son:**
 - Rentabilidad Anual.
 - Volatilidad.
 - Máximo Drawdown.
 - Sharpe Ratio
 
-## 3.HIPOTESIS 💲.
+## 🤔 3.HIPOTESIS.
 
 **🧪 Hipótesis 1 — Rentabilidad anual**
 H0: No existen diferencias significativas en la rentabilidad anual entre los 5 criptoactivos. 
