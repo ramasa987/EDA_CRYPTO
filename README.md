@@ -18,14 +18,7 @@ Los criterios definidos son:
 - Volatility_24h → 20%
 - ATH_distance → 10%
 
-## 💲2.ESTUDIO DE RENTABILIDAD.
-**Para comprobar que criptoactivo de los 5 elegidos es mas retable en el periodo de 2025. Realizo un analisis de retabilidad de los criptoactivos seleccionados, estableciendo unas hipotesis. Las metricas utlizadas son:**
-- Rentabilidad Anual.
-- Volatilidad.
-- Máximo Drawdown.
-- Sharpe Ratio
-
-## 🤔 3.HIPOTESIS.
+## 🤔 2.HIPOTESIS.
 
 **🧪 Hipótesis 1 — Rentabilidad anual**
 H0: No existen diferencias significativas en la rentabilidad anual entre los 5 criptoactivos. 
@@ -48,6 +41,13 @@ H0: No hay diferencias significativas en el Sharpe Ratio entre los 5 activos.
 H1: Uno de los activos tiene un Sharpe Ratio superior, indicando mejor relación riesgo–retorno.
 
 Sharpe Ratio: SR=Ractivo−Rfσ (Usa Rf=0 si no tienes tasa libre de riesgo).
+
+## 💲3.ESTUDIO DE RENTABILIDAD.
+**Para comprobar que criptoactivo de los 5 elegidos es mas retable en el periodo de 2025. Realizo un analisis de retabilidad de los criptoactivos seleccionados, estableciendo unas hipotesis. Las metricas utlizadas son:**
+- Rentabilidad Anual.
+- Volatilidad.
+- Máximo Drawdown.
+- Sharpe Ratio
 
 # 🧠4.SINTESIS.
 **Selección de activos**
