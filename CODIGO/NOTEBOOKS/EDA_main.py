@@ -256,7 +256,7 @@ dfi.export(volatility,"daily_volatility.png",table_conversion='chrome')
 df_vol_no_usdt = volatility[volatility["symbol"] != "usdt"]
 
 # Colores profesionales (azules suaves)
-colors = plt.cm.Blues_r(np.linspace(0.3, 0.9, len(df_vol_no_usdt)))
+colors = plt.cm.Greens_r(np.linspace(0.3, 0.9, len(df_vol_no_usdt)))
 
 # Crear figura
 fig, ax = plt.subplots(figsize=(8, 8))
@@ -431,7 +431,7 @@ sns.heatmap(
     summary.set_index("symbol"),
     annot=True,
     fmt=".4f",
-    cmap="Blues",
+    cmap="Greens",
     linewidths=0.5,
     cbar=False
 )
@@ -447,10 +447,10 @@ plt.show()
 pivot_returns = ohlc_2025.pivot_table(index="date", columns="symbol", values="daily_return")
 
 plt.figure(figsize=(8,6))
-sns.heatmap(pivot_returns.corr(), annot=True, cmap="coolwarm")
+sns.heatmap(pivot_returns.corr(), annot=True, cmap="Greens", vmin=-1,vmax=1)
 plt.title("Correlación entre Retornos Diarios (2025)")
 plt.tight_layout()
-plt.savefig("Correlacion_activos_HEATMAP.png", dpi=300, bbox_inches="tight")
+plt.savefig("Correlacion_activos_HEATMAP_verde.png", dpi=300, bbox_inches="tight")
 plt.show()
 
 # TABLA SUMARY
