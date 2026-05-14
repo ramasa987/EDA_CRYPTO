@@ -40,5 +40,9 @@ Sharpe Ratio: SR=Ractivo−Rfσ
 (Usa Rf=0 si no tienes tasa libre de riesgo).
 
 # 🏁 5. Conclusión final
+
+
+---
+Este archivo README es un resumen del análisis completo. Si deseas explorar los gráficos y datos en mayor detalle, te invito a consultar los notebooks y recursos visuales disponibles en el repositorio. 🎨📊
 H0: El momentum de 90 días no predice la rentabilidad futura en 2025. 
 H1: El momentum de 90 días está asociado con mayor rentabilidad posterior.
